@@ -2,13 +2,25 @@
   {
     "id": "mark-1",
     "version": 1.0,
-    "name": "The First Draft",
+    "name": "My First Ever Resume",
     "date": "2020",
-    "pdfUrl": "/resumes/prefect.pdf",
+    "pdfUrl": "/resumes/Resume_v1.pdf",
     "isLatest": true,
     "changelog": [
-      "+ This is the very first version of my resume."
+      "+ Application for prefectorial council."
     ],
-    "easterEgg": "We all start somewhere!"
+    "easterEgg": "Became a prefect!"
+  },
+  {
+    "id": "mark-2",
+    "version": 2.0,
+    "name": "Engineering begins",
+    "date": "2023",
+    "pdfUrl": "/resumes/csi.pdf",
+    "isLatest": true,
+    "changelog": [
+      "+ Application for CSI Subcom."
+    ],
+    "easterEgg": "Rejected(messed up the interview) TT!"
   }
 ]

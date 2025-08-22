@@ -1,7 +1,7 @@
 // stark-resume/app/landing/page.tsx
 'use client'; // Needed for the Framer Motion component we will add
 
-import { ArcReactor } from '../app/components/ArcReactor';
+import { ArcReactor } from '../components/ArcReactor';
 import { motion } from 'framer-motion';
 
 export default function LandingPage() {
