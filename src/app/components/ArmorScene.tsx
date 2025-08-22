@@ -1,20 +1,15 @@
-// stark-resume/app/components/ArmorScene.tsx
 'use client';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Text, Cylinder } from '@react-three/drei';
 import { useRef, useState } from 'react';
 import * as THREE from 'three';
+import { Resume } from '@/app/types/types'; // Import the standardized type
 
-// Type for the resume data
-type Resume = {
-  id: string;
-  version: number;
-  name: string;
-};
+// The local Resume type is now removed
 
-// Component for a single armor pedestal
 function ArmorPedestal({ resume, position, onClick }: { resume: Resume, position: [number, number, number], onClick: () => void }) {
+  // ... component code remains the same
   const meshRef = useRef<THREE.Mesh>(null!);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -44,11 +39,10 @@ function ArmorPedestal({ resume, position, onClick }: { resume: Resume, position
   );
 }
 
-// NEW: This component contains all the 3D objects and hooks
 function SceneContent({ resumes, onPedestalClick }: { resumes: Resume[], onPedestalClick: (resume: Resume) => void }) {
+  // ... component code remains the same
   const groupRef = useRef<THREE.Group>(null!);
 
-  // This useFrame hook is now correctly inside a child of <Canvas>
   useFrame(() => {
     if (groupRef.current) {
       groupRef.current.rotation.y += 0.001;
@@ -86,8 +80,6 @@ function SceneContent({ resumes, onPedestalClick }: { resumes: Resume[], onPedes
   );
 }
 
-
-// The main component now just sets up the Canvas
 export const ArmorScene = ({ resumes, onPedestalClick }: { resumes: Resume[], onPedestalClick: (resume: Resume) => void }) => {
   return (
     <Canvas camera={{ position: [0, 5, 12], fov: 60 }}>
