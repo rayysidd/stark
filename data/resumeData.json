@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mark-1",
+    "version": 1.0,
+    "name": "The First Draft",
+    "date": "2020",
+    "pdfUrl": "/resumes/prefect.pdf",
+    "isLatest": true,
+    "changelog": [
+      "+ This is the very first version of my resume."
+    ],
+    "easterEgg": "We all start somewhere!"
+  }
+]
