@@ -8,5 +8,4 @@ export type Resume = {
   pdfUrl: string;
   isLatest: boolean;
   changelog: string[];
-  easterEgg: string | null;
 };
