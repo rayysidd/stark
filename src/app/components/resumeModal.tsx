@@ -84,7 +84,7 @@ export const ResumeModal = ({ resume, onClose }: ModalProps) => {
 
             <h3 className="text-xl font-semibold text-yellow-400 mb-4 flex items-center">
               <span className="mr-2">⚡</span>
-              KEY UPGRADES
+              Details
             </h3>
             
             <div className="space-y-3">
@@ -121,9 +121,7 @@ export const ResumeModal = ({ resume, onClose }: ModalProps) => {
 
           {/* Right Side: PDF Viewer */}
           <div className="flex-grow bg-gradient-to-br from-gray-800 to-gray-900 p-1 rounded-b-lg relative">
-            <div className="absolute top-2 left-2 text-xs text-yellow-400/60 z-10">
-              HOLOGRAPHIC DISPLAY
-            </div>
+            
             
             <iframe
               src={`${resume.pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}

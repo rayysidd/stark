@@ -5,9 +5,9 @@
     "name": "My First Ever Resume",
     "date": "2020",
     "pdfUrl": "/resumes/Resume_v1.pdf",
-    "isLatest": true,
+    "isLatest": false,
     "changelog": [
-      "+ Application for prefectorial council."
+      "+ Application for prefectorial council.Became a prefect!"
     ],
     "easterEgg": "Became a prefect!"
   },
@@ -17,10 +17,83 @@
     "name": "Engineering begins",
     "date": "2023",
     "pdfUrl": "/resumes/csi.pdf",
-    "isLatest": true,
+    "isLatest": false,
     "changelog": [
-      "+ Application for CSI Subcom."
+      "+ Application for CSI Subcom.Rejected(messed up the interview) TT!"
     ],
     "easterEgg": "Rejected(messed up the interview) TT!"
+  },
+  {
+    "id": "mark-3",
+    "version": 3.0,
+    "name": "Application for Student Council",
+    "date": "2024",
+    "pdfUrl": "/resumes/stuco.pdf",
+    "changelog": [
+      "+ Applied for the post of Social Media Manager.Interview went well but got rejected!"
+    ]
+  },
+  {
+    "id": "mark-69",
+    "version": 69.0,
+    "name": "PCS Resume Assignment",
+    "date": "2024",
+    "pdfUrl": "/resumes/pcs(fake).pdf",
+    "changelog": [
+      "+ This was a fake resume that I made for a course that we had on Professional Communication Skill"
+    ]
+  },
+  {
+    "id": "mark-4",
+    "version": 4.0,
+    "name": "JPMC Code For Good",
+    "date": "2025",
+    "pdfUrl": "/resumes/jpmccfg.pdf",
+    "changelog": [
+      "+ Applied for JPMC Code For Good Hackathon.Rejected"
+    ]
+  },
+  {
+    "id": "mark-5",
+    "version": 5.0,
+    "name": "Aim4U",
+    "date": "2025",
+    "pdfUrl": "/resumes/aim4u.pdf",
+    "changelog": [
+      "+ Applied for ML internship at Aim4U.Selected"
+    ]
+  },
+  {
+    "id": "mark-6",
+    "version": 6.0,
+    "name": "Barclays",
+    "date": "2025",
+    "pdfUrl": "/resumes/barclays.pdf",
+    "isLatest":true,
+    "changelog": [
+      "+ Applied for Barclays Summer Internship.Selected"
+    ]
+  },
+  {
+    "id": "mark-7",
+    "version": 7.0,
+    "name": "Machine Learning",
+    "date": "2025",
+    "pdfUrl": "/resumes/mltp.pdf",
+    "isLatest":true,
+    "changelog": [
+      "+ ML focused resume"
+    ]
+  },
+  {
+    "id": "mark-8",
+    "version": 8.0,
+    "name": "For Hackathons",
+    "date": "2025",
+    "pdfUrl": "/resumes/hackathons.pdf",
+    "isLatest":true,
+    "changelog": [
+      "+ Will use this while applying to Hackathons"
+    ]
   }
 ]
