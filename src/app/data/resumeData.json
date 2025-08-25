@@ -29,6 +29,7 @@
     "name": "Application for Student Council",
     "date": "2024",
     "pdfUrl": "/resumes/stuco.pdf",
+    "isLatest":false,
     "changelog": [
       "+ Applied for the post of Social Media Manager.Interview went well but got rejected!"
     ]
@@ -39,6 +40,7 @@
     "name": "PCS Resume Assignment",
     "date": "2024",
     "pdfUrl": "/resumes/pcs(fake).pdf",
+    "isLatest":false,
     "changelog": [
       "+ This was a fake resume that I made for a course that we had on Professional Communication Skill"
     ]
@@ -49,6 +51,7 @@
     "name": "JPMC Code For Good",
     "date": "2025",
     "pdfUrl": "/resumes/jpmccfg.pdf",
+    "isLatest":false,
     "changelog": [
       "+ Applied for JPMC Code For Good Hackathon.Rejected"
     ]
@@ -59,6 +62,7 @@
     "name": "Aim4U",
     "date": "2025",
     "pdfUrl": "/resumes/aim4u.pdf",
+    "isLatest":false,
     "changelog": [
       "+ Applied for ML internship at Aim4U.Selected"
     ]
