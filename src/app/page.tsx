@@ -5,6 +5,7 @@ import { ArcReactor } from '../app/components/ArcReactor'; // Fixed import path
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+
 export default function LandingPage() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center bg-black text-white overflow-hidden">
@@ -52,34 +53,23 @@ export default function LandingPage() {
           </div>
         </motion.div>
 
-        {/* Main Title */}
+        {/* Main Logo/Image */}
         <motion.div
           className="text-center mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-yellow-400 via-red-500 to-yellow-400 bg-clip-text text-transparent mb-4">
-            STARK INDUSTRIES
-          </h1>
+          <div className="mb-4">
+            <img
+              src="stark.png"
+              alt="Stark Industries"
+              className="mx-auto filter drop-shadow-2xl w-200 h-auto"
+            />
+          </div>
           <h2 className="text-2xl md:text-3xl text-white mb-2">
             ARCHIVES
           </h2>
-        </motion.div>
-
-        {/* Project Label */}
-        <motion.div
-          className="mb-8 px-6 py-3 border-2 border-yellow-400/50 bg-gradient-to-r from-yellow-900/20 to-red-900/20 rounded-lg"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <p className="text-xl md:text-2xl text-yellow-400 font-semibold">
-            PROJECT: CAREER EVOLUTION
-          </p>
-          <p className="text-sm text-gray-400 mt-1">
-            Personal Development Initiative
-          </p>
         </motion.div>
 
         {/* Arc Reactor */}
@@ -102,18 +92,6 @@ export default function LandingPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <Link href="/hall">
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-red-600 to-yellow-500 hover:from-red-500 hover:to-yellow-400 text-black font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              <span className="flex items-center space-x-2">
-                <span>⚡</span>
-                <span>ACCESS HALL OF ARMOR</span>
-                <span>⚡</span>
-              </span>
-              
-              {/* Button glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-yellow-400 rounded-lg blur opacity-30 group-hover:opacity-50 transition-opacity -z-10"></div>
-            </button>
-          </Link>
         </motion.div>
 
         {/* Security Warning */}
@@ -142,24 +120,6 @@ export default function LandingPage() {
           </p>
         </motion.div>
 
-        {/* Bottom Status Bar */}
-        <motion.div
-          className="absolute bottom-6 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-        >
-          <div className="bg-black/80 border border-red-800 px-6 py-2 rounded-full">
-            <div className="flex items-center space-x-4 text-xs">
-              <span className="text-yellow-400">●</span>
-              <span className="text-white">STARK INDUSTRIES</span>
-              <span className="text-red-400">|</span>
-              <span className="text-gray-400">EST. 1940</span>
-              <span className="text-red-400">|</span>
-              <span className="text-gray-400">INNOVATION UNLIMITED</span>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Corner Brackets */}
