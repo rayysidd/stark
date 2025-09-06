@@ -4,14 +4,8 @@
 
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import type { Resume } from '@/app/types/types';
 
-type Resume = {
-  id: string;
-  version: number;
-  name: string;
-  pdfUrl: string;
-  changelog: string[];
-};
 
 type ModalProps = {
   resume: Resume;
@@ -160,7 +154,7 @@ export const ResumeModal = ({ resume, onClose }: ModalProps) => {
           >
             
             {/* Enhanced System Status */}
-            <motion.div 
+             <motion.div 
               className="mb-6 p-4 rounded-lg border border-yellow-600/40 relative overflow-hidden"
               style={{
                 background: 'linear-gradient(135deg, rgba(180, 83, 9, 0.1) 0%, rgba(34, 197, 94, 0.1) 100%)',
@@ -182,7 +176,7 @@ export const ResumeModal = ({ resume, onClose }: ModalProps) => {
                   <div>📡 Communication: Online</div>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> 
 
             <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-400 mb-6 flex items-center">
               <motion.span 
@@ -195,27 +189,36 @@ export const ResumeModal = ({ resume, onClose }: ModalProps) => {
               UPGRADE DETAILS
             </h3>
             
-            <div className="space-y-3">
-              {resume.changelog.map((change, index) => (
-                <motion.div 
-                  key={index} 
-                  className="flex items-start space-x-3 p-3 rounded-lg hover:bg-red-900/20 transition-all duration-300 group border-l-2 border-transparent hover:border-yellow-400/50"
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.1 * index }}
-                >
-                  <motion.span 
-                    className={`text-lg mt-0.5 ${change.startsWith('+') ? 'text-green-400' : 'text-yellow-400'}`}
-                    whileHover={{ scale: 1.2 }}
-                  >
-                    {change.startsWith('+') ? '◆' : '◇'}
-                  </motion.span>
-                  <span className="text-gray-300 text-sm leading-relaxed group-hover:text-white transition-colors">
-                    {change.substring(1).trim()}
-                  </span>
-                </motion.div>
-              ))}
-            </div>
+            {/* Resume Details */}
+<div className="space-y-4">
+  <motion.div 
+    className="p-4 rounded-lg border border-yellow-600/40"
+    style={{
+      background: 'linear-gradient(135deg, rgba(180, 83, 9, 0.1) 0%, rgba(34, 197, 94, 0.1) 100%)',
+    }}
+    initial={{ scale: 0.9, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+  >
+    <p className="text-gray-300 text-sm leading-relaxed">
+      {resume.context}
+    </p>
+  </motion.div>
+
+  <motion.div
+    className={`p-3 rounded-lg text-center font-bold tracking-wide ${
+      resume.status === "selected"
+        ? "bg-green-900/30 text-green-400 border border-green-500/40"
+        : resume.status === "rejected"
+        ? "bg-red-900/30 text-red-400 border border-red-500/40"
+        : "bg-gray-900/30 text-gray-400 border border-gray-500/40"
+    }`}
+    initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+  >
+    STATUS: {resume.status.toUpperCase()}
+  </motion.div>
+</div>
+
 
             {/* Enhanced Download Button */}
             <motion.div 
@@ -243,7 +246,7 @@ export const ResumeModal = ({ resume, onClose }: ModalProps) => {
                   >
                     ⬇
                   </motion.span>
-                  <span className="tracking-wider">DOWNLOAD SCHEMATICS</span>
+                  <span className="tracking-wider">DOWNLOAD PDF</span>
                 </span>
               </motion.a>
               

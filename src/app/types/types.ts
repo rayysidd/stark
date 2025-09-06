@@ -7,5 +7,6 @@ export type Resume = {
   date: string;
   pdfUrl: string;
   isLatest: boolean;
-  changelog: string[];
+  context:string;
+  status:"selected" | "rejected" | "n.a";
 };

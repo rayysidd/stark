@@ -6,9 +6,8 @@
     "date": "2020",
     "pdfUrl": "/resumes/Resume_v1.pdf",
     "isLatest": false,
-    "changelog": [
-      "+ Application for prefectorial council.Became a prefect!"
-    ]
+    "context": "Application for prefectorial council.",
+    "status": "selected"
   },
   {
     "id": "mark-2",
@@ -17,9 +16,8 @@
     "date": "2023",
     "pdfUrl": "/resumes/csi.pdf",
     "isLatest": false,
-    "changelog": [
-      "+ Application for CSI Subcom.Rejected(messed up the interview) TT!"
-    ]
+    "context": "Application for CSI Subcom.",
+    "status": "rejected"
   },
   {
     "id": "mark-3",
@@ -27,10 +25,9 @@
     "name": "Application for Student Council",
     "date": "2024",
     "pdfUrl": "/resumes/stuco.pdf",
-    "isLatest":false,
-    "changelog": [
-      "+ Applied for the post of Social Media Manager.Interview went well but got rejected!"
-    ]
+    "isLatest": false,
+    "context": "For applying to Student Council (Social Media Manager role)",
+    "status": "rejected"
   },
   {
     "id": "mark-69",
@@ -38,10 +35,9 @@
     "name": "PCS Resume Assignment",
     "date": "2024",
     "pdfUrl": "/resumes/pcs(fake).pdf",
-    "isLatest":false,
-    "changelog": [
-      "+ This was a fake resume that I made for a course that we had on Professional Communication Skill"
-    ]
+    "isLatest": false,
+    "context": "Fake resume made for Professional Communication Skills course",
+    "status": "n.a"
   },
   {
     "id": "mark-4",
@@ -49,10 +45,9 @@
     "name": "JPMC Code For Good",
     "date": "2025",
     "pdfUrl": "/resumes/jpmccfg.pdf",
-    "isLatest":false,
-    "changelog": [
-      "+ Applied for JPMC Code For Good Hackathon.Rejected"
-    ]
+    "isLatest": false,
+    "context": "Used for JPMC Code For Good Hackathon application",
+    "status": "rejected"
   },
   {
     "id": "mark-5",
@@ -60,10 +55,9 @@
     "name": "Aim4U",
     "date": "2025",
     "pdfUrl": "/resumes/aim4u.pdf",
-    "isLatest":false,
-    "changelog": [
-      "+ Applied for ML internship at Aim4U.Selected"
-    ]
+    "isLatest": false,
+    "context": "Applied for ML internship at Aim4U startup",
+    "status": "selected"
   },
   {
     "id": "mark-6",
@@ -71,10 +65,9 @@
     "name": "Barclays",
     "date": "2025",
     "pdfUrl": "/resumes/barclays.pdf",
-    "isLatest":true,
-    "changelog": [
-      "+ Applied for Barclays Summer Internship.Selected"
-    ]
+    "isLatest": true,
+    "context": "Resume submitted for Barclays Summer Internship",
+    "status": "selected"
   },
   {
     "id": "mark-7",
@@ -82,10 +75,9 @@
     "name": "Machine Learning",
     "date": "2025",
     "pdfUrl": "/resumes/mltp.pdf",
-    "isLatest":true,
-    "changelog": [
-      "+ ML focused resume"
-    ]
+    "isLatest": true,
+    "context": "ML-focused resume for research and technical applications",
+    "status": "n.a"
   },
   {
     "id": "mark-8",
@@ -93,9 +85,8 @@
     "name": "For Hackathons",
     "date": "2025",
     "pdfUrl": "/resumes/hackathons.pdf",
-    "isLatest":true,
-    "changelog": [
-      "+ Will use this while applying to Hackathons"
-    ]
+    "isLatest": true,
+    "context": "Resume intended for hackathon applications",
+    "status": "n.a"
   }
 ]
