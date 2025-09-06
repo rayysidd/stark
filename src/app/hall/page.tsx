@@ -14,7 +14,10 @@ const ResumeModal = dynamic(
 );
 
 export default function HallPage() {
-  const resumes: Resume[] = resumeData;
+  const resumes: Resume[] = resumeData.map((resume) => ({
+    ...resume,
+    status: resume.status as "selected" | "rejected" | "n.a"
+  }));
   const [selectedResume, setSelectedResume] = useState<Resume | null>(null);
 
   return (
